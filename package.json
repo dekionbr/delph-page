@@ -1,0 +1,24 @@
+{
+  "name": "delph-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekionbr/delph-page.git"
+  },
+  "author": "Julio Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dekionbr/delph-page/issues"
+  },
+  "homepage": "https://github.com/dekionbr/delph-page#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

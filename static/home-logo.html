@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Page Exemple</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div
+            class="d-flex flex-column flex-md-row align-items-center p-3 mb-3 bg-white border-bottom box-shadow fixed-top">
+            <div class="row align-items-center">
+                <div class="col-4 col-sm-4 col-md-4">
+                    <div class="rounded-circle img-thumbnail w-100 box-shadow" style="background-image: url('img/beiratronica.jpeg');">
+                    </div>
+                    <!-- <img alt="Bootstrap Image Preview" src="img/beiratronica.jpeg"
+                        class="rounded-circle img-thumbnail w-100" /> -->
+                </div>
+                <div class="col-8 col-sm-8 col-md-8">
+                    <div class="page-header">
+                        <h1>
+                            Company name
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            Dúvida enviada com sucesso!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade collapse" role="alert">
+            Não foi possivel enviar sua dúvida, tente novamente mais tarde!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Ficha
+                    </h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Label:</strong><span>habitasse platea dictums</span>
+                        </li>
+                        <li><strong>Label:</strong><span>habitasse platea dictums</span></li>
+                        <li><strong>Label:</strong><span>habitasse platea dictums</span>
+                        </li>
+                    </ul>
+                    <p>
+                        Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien
+                        sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed
+                        vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis
+                        posuere
+                        diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo
+                            imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa
+                        magna,
+                        vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu,
+                            pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+                    </p>                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Mais Informaçãoes
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Mais Informações</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Dúvidas:</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Selecione</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Mensagem:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block btn-light mt-2" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-block btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer class="d-flex flex-column flex-md-row align-items-center pt-1 bg-white border-top box-shadow fixed-bottom">
+        <p class="text-center w-100">Copyright © <a href="http://intersystem.info/">Intersystem</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

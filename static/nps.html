@@ -84,7 +84,8 @@
                 console.log(status);
                 console.log(data);
                 // resultado sucess
-                location.href = location.origin + "/" + "nps-result.html"
+                var urlResult = location.href.substring(0, location.href.lastIndexOf("/")) + "/" + "nps-result.html";
+                location.href = urlResult;
             });
         });
     </script>

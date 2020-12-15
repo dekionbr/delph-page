@@ -18,3 +18,7 @@ div.img-thumbnail{
         padding: 3rem;
     }
 }
+
+.nps .btn.btn-sm{
+    padding: .25rem 0.55rem;
+}

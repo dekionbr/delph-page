@@ -30,25 +30,25 @@
                 No geral, qual o nível de satisfação com o processo de reparação?
             </p>
             <div class="d-flex flex-row justify-content-center nps">
-                <button type="button" class="btn btn-sm btn-success ml-1 mr-1" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-sm btn-success ml-1 mr-1" data-toggle="modal" data-target="#1" data-value="1">
                     1
                 </button>
-                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#2" data-value="2">
                     2
                 </button>
-                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#3" data-value="3">
                     3
                 </button>
-                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#4" data-value="4">
                     4
                 </button>
-                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#5" data-value="5">
                     5
                 </button>
-                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#6" data-value="6">
                     6
                 </button>
-                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-sm btn-success mr-1" data-toggle="modal" data-target="#7" data-value="7">
                     7
                 </button>                   
             </div>
@@ -62,8 +62,8 @@
     <footer class="d-flex flex-column flex-md-row align-items-center pt-1 bg-white border-top box-shadow fixed-bottom">
         <p class="text-center w-100">Copyright © <a href="http://intersystem.info/">Intersystem</a></p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -71,6 +71,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script>
+        $('button').on('click', function(){
+            //minha url de post aqui
+            var url = "https://5fd8f2fb7e05f000170d3329.mockapi.io/intersystem/api/v1/questions/2/answers"; 
+            $.post(url,
+            {
+                "value": parseInt($(this).data("value"), 10), //valor da opção da resposta
+                "userId": Math.floor(Math.random() * 10) //id do usuário fake logado
+            }).done(function(data, status) {
+                console.log(status);
+                console.log(data);
+                // resultado sucess
+                location.href = location.origin + "/" + "nps-result.html"
+            });
+        });
+    </script>
 </body>
 
 </html>
